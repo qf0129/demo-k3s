@@ -1,0 +1,5 @@
+sudo docker build -t 'demo-k3s' .
+sudo docker tag demo-k3s qf0129/demo-k3s
+sudo docker push qf0129/demo-k3s
+
+sudo docker run -p 8123:8123 qf0129/demo-k3s
